@@ -28,7 +28,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bis-so-eAz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bis-so-eAz">
                                         <rect key="frame" x="0.0" y="598" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="y6O-3C-t1r"/>
@@ -38,8 +38,11 @@
                                         <state key="normal" title="Choice 1" backgroundImage="choice1Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y0L-bA-jjy"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiv-FN-yPN">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uiv-FN-yPN">
                                         <rect key="frame" x="0.0" y="718" width="374" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="l2G-GV-FQf"/>
@@ -49,6 +52,9 @@
                                         <state key="normal" title="Choice 2" backgroundImage="choice2Background">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vZ-W2-FeF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -66,6 +72,11 @@
                             <constraint firstItem="xT7-aN-JV7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xAt-3u-til"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1Button" destination="Bis-so-eAz" id="ECJ-SH-yZb"/>
+                        <outlet property="choice2Button" destination="uiv-FN-yPN" id="jkG-Fp-USI"/>
+                        <outlet property="storyLabel" destination="Fq2-Gi-A2v" id="4I8-mY-3Th"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
